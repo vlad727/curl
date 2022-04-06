@@ -1,1 +1,2 @@
 curl -I # get only status code
+curl -O http://ftp.gnu.org/gnu/wget/wget-1.15.tar.gz # download files
