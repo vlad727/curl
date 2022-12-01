@@ -1,6 +1,7 @@
 curl -I # get only status code
 curl -O http://ftp.gnu.org/gnu/wget/wget-1.15.tar.gz # download files
 curl -v telnet://127.0.0.1:22 # check port 22  response result if it open and works "Connected to 127.0.0.1 (127.0.0.1) port 22 (#0) and  SSH-2 OpenSSH_7.9" or  closed "Connection refused"
+curl  -u admin:12345 --basic http://127.0.0.1:808 ### get with basic authorization 
 
 example:
 curl 10.0.0.1:12345
