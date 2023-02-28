@@ -21,3 +21,6 @@ then we know that the port is not reachable from where we are running curl. This
 
 ### get hostname from curl ###
 curl -v --silent syn-data-plane-01.apps.k8s.<fqdn> 2>&1 | grep "Host"
+
+### curl with header ###
+curl --header 'Host: domain.tld' 'http://10.1.2.28:81/' 
