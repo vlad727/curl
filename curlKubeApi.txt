@@ -5,3 +5,7 @@ curl https://api.<fqdn>:6443/apis/apps/v1/namespaces/default/deployments --cacer
 ### Клиент может передавать параметры выполнения запроса в URI целевого ресурса после символа «?»:
 ### Знак вопроса отделяет адрес от передаваемых данных
 GET /path/resource?param1=value1&param2=value2 HTTP/1.1
+
+### example below provides only one istiooperator in yaml format
+curl https://api.dap.r4c-test.solution.sbt:6443/apis/install.istio.io/v1alpha1/istiooperators?limit=1 \
+--cacert ca.crt --cert tls.crt --key tls.key -X GET --header 'Accept: application/yaml'
