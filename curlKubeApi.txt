@@ -9,3 +9,8 @@ GET /path/resource?param1=value1&param2=value2 HTTP/1.1
 ### example below provides only one istiooperator in yaml format
 curl https://api.dap.r4c-test.solution.sbt:6443/apis/install.istio.io/v1alpha1/istiooperators?limit=1 \
 --cacert ca.crt --cert tls.crt --key tls.key -X GET --header 'Accept: application/yaml'
+
+### kind table example
+https://kubernetes.io/docs/reference/using-api/api-concepts/#receiving-resources-as-tables
+curl https://api.<your-fqdn>:6443/apis/install.istio.io/v1alpha1/istiooperators?limit=1 \
+--cacert ca.crt --cert tls.crt --key tls.key -X GET --header 'Accept: application/json;as=Table;g=meta.k8s.io;v=v1'
