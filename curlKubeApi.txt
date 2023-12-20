@@ -1,3 +1,6 @@
 ### get deployments in namespace default with header application/yaml
 ### output will be in yaml
 curl https://api.<fqdn>:6443/apis/apps/v1/namespaces/default/deployments --cacert ca.crt --cer tls.crt --key tls.key -X GET --header 'Accept: application/yaml'
+
+### Клиент может передавать параметры выполнения запроса в URI целевого ресурса после символа «?»:
+GET /path/resource?param1=value1&param2=value2 HTTP/1.1
