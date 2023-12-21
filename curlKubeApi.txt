@@ -14,3 +14,5 @@ curl https://api.dap.r4c-test.solution.sbt:6443/apis/install.istio.io/v1alpha1/i
 https://kubernetes.io/docs/reference/using-api/api-concepts/#receiving-resources-as-tables
 curl https://api.<your-fqdn>:6443/apis/install.istio.io/v1alpha1/istiooperators?limit=1 \
 --cacert ca.crt --cert tls.crt --key tls.key -X GET --header 'Accept: application/json;as=Table;g=meta.k8s.io;v=v1'
+### accept and content type json
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" http://hostname/resource
