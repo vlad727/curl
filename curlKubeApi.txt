@@ -7,7 +7,7 @@ curl https://api.<fqdn>:6443/apis/apps/v1/namespaces/default/deployments --cacer
 GET /path/resource?param1=value1&param2=value2 HTTP/1.1
 
 ### example below provides only one istiooperator in yaml format
-curl https://api.dap.r4c-test.solution.sbt:6443/apis/install.istio.io/v1alpha1/istiooperators?limit=1 \
+curl https://api.<fqdn>/apis/install.istio.io/v1alpha1/istiooperators?limit=1 \
 --cacert ca.crt --cert tls.crt --key tls.key -X GET --header 'Accept: application/yaml'
 
 ### kind table example
